@@ -304,7 +304,6 @@ func (l *Conn) Search(searchRequest *SearchRequest) (*SearchResult, error) {
 	}
 
 	l.Debug.PrintPacket(packet)
-	
 
 	channel, err := l.sendMessage(packet)
 	if err != nil {
